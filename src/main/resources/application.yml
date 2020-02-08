@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: custom-tk
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    password: 123456
+  profiles:
+    active: test
+
+mapper:
+  resolve-class: com.wulian.tkmybatis.conf.MybatisConfig
+
+logging:
+  level:
+    com.wulian.tkmybatis.mapper: debug
+
